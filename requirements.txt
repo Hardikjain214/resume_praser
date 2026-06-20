@@ -1,0 +1,6 @@
+Flask
+pdfplumber
+pandas
+spacy
+scikit-learn
+gunicorn
