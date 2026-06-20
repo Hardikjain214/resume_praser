@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="app-header">
+        <h1>AI Resume Analyzer</h1>
+    </div>
+
+    <div class="profile">
+
+        <div class="avatar">
+            👤
+        </div>
+
+        <h2>{{ data.Name }}</h2>
+
+    </div>
+
+    <div class="card">
+        <div class="card-title">📧 Email</div>
+        {{ data.Email }}
+    </div>
+
+    <div class="card">
+        <div class="card-title">📱 Phone</div>
+        {{ data.Phone }}
+    </div>
+
+    <div class="card">
+        <div class="card-title">🚀 Skills</div>
+
+        <div class="skills">
+
+            {% for skill in data.Skills %}
+                <span class="skill">{{ skill }}</span>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <div class="score">
+
+        <div class="score-circle">
+            85%
+        </div>
+
+        <p>Candidate Score</p>
+
+    </div>
+
+    <a href="/">
+        <button>
+            Analyze Another Resume
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

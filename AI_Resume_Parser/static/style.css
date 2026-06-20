@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:400px;
+    background:white;
+    border-radius:30px;
+    padding:25px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.15);
+}
+
+.app-header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.app-header h1{
+    color:#2563eb;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:40px;
+}
+
+.profile h2{
+    margin-top:10px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.card-title{
+    color:#2563eb;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.score{
+    text-align:center;
+    margin:20px 0;
+}
+
+.score-circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#10b981;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    font-weight:bold;
+    margin:auto;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:15px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
